@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ejemplociclowhile;
 
 import java.util.Locale;
@@ -31,25 +27,25 @@ public class Ejemplo06 {
                 + "estudiantes de su materia");
         // true 
         // while (bandera) {
-        while(bandera==true){
+        while(bandera==true){ // true==true >> true || false == true
             System.out.println("Ingrese calificación");
-            calificacion = entrada.nextDouble();
+            calificacion = entrada.nextDouble(); // 23 // 15
 
-            if (calificacion > 20) {
-                calificacion = 20;
+            if (calificacion > 20) { // 23 > 20 V | 15 > 20 F
+                calificacion = 20; // 20
             }
-            suma_total = suma_total + calificacion;
-
+            suma_total = suma_total + calificacion; // 0 + 20 = 20
+                                                    // 20 + 15 = 35
             // proceso para salir del ciclo.
             System.out.println("Ingrese el valor -1 para salir del ciclo");
-            int temporal = entrada.nextInt();
+            int temporal = entrada.nextInt(); // 0
 
-            if (temporal == -1) {
+            if (temporal == -1) { // 0 == -1 | falso | -1 == -1 V
                 bandera = false;
             }
         }
 
         System.out.printf("Suma de calificaciones es %.2f\n", suma_total);
-
+        // Suma de calificaciones es 35.00
     }
 }
